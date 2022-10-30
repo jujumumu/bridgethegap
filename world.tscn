@@ -1,0 +1,261 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://montserrat.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://world.gd" type="Script" id=2]
+[ext_resource path="res://assets/blueleft.png" type="Texture" id=3]
+[ext_resource path="res://assets/blueright.png" type="Texture" id=4]
+[ext_resource path="res://assets/yellowright.png" type="Texture" id=5]
+[ext_resource path="res://assets/greenright.png" type="Texture" id=6]
+[ext_resource path="res://assets/yellowleft.png" type="Texture" id=7]
+[ext_resource path="res://assets/greenleft.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 3 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 3 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 3 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 4 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 4 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 4 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 4 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 4 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 8 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 8 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 8 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 8 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 8 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 6 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 6 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 6 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 6 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 6 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 7 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 7 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 7 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 7 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 7 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 5 )
+region = Rect2( 270, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 5 )
+region = Rect2( 360, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 5 )
+region = Rect2( 450, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 5 )
+region = Rect2( 90, 0, 90, 90 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 5 )
+region = Rect2( 180, 0, 90, 90 )
+
+[sub_resource type="SpriteFrames" id=40]
+animations = [ {
+"frames": [ SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 8 ), SubResource( 7 ), SubResource( 6 ) ],
+"loop": true,
+"name": "blueleft",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
+"loop": true,
+"name": "blueright",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "greenleft",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "greenright",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ) ],
+"loop": true,
+"name": "yellowleft",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ) ],
+"loop": true,
+"name": "yellowright",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=41]
+size = 30
+font_data = ExtResource( 1 )
+
+[node name="World" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = 20
+
+[node name="Reset" type="Button" parent="Node2D"]
+margin_left = 1572.0
+margin_top = 56.0
+margin_right = 1805.0
+margin_bottom = 124.0
+custom_fonts/font = SubResource( 1 )
+text = "RESET"
+
+[node name="skip" type="Button" parent="Node2D"]
+margin_left = 1588.0
+margin_top = 139.0
+margin_right = 1816.0
+margin_bottom = 215.0
+text = "ski["
+
+[node name="Roles" type="Node2D" parent="."]
+position = Vector2( 43, 46 )
+scale = Vector2( 0.6, 0.6 )
+z_index = 20
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Roles"]
+position = Vector2( 0, 160 )
+frames = SubResource( 40 )
+animation = "yellowright"
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Roles"]
+position = Vector2( 0, 80 )
+frames = SubResource( 40 )
+animation = "blueright"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Roles"]
+frames = SubResource( 40 )
+animation = "greenright"
+
+[node name="green" type="Label" parent="Roles"]
+margin_left = 49.0
+margin_top = -11.0
+margin_right = 218.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 41 )
+
+[node name="yellow" type="Label" parent="Roles"]
+margin_left = 49.0
+margin_top = 149.0
+margin_right = 218.0
+margin_bottom = 187.0
+custom_fonts/font = SubResource( 41 )
+
+[node name="blue" type="Label" parent="Roles"]
+margin_left = 49.0
+margin_top = 69.0
+margin_right = 218.0
+margin_bottom = 107.0
+custom_fonts/font = SubResource( 41 )
+
+[connection signal="pressed" from="Node2D/Reset" to="." method="_on_Reset_pressed"]
+[connection signal="pressed" from="Node2D/skip" to="." method="_on_skip_pressed"]
