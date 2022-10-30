@@ -211,7 +211,6 @@ custom_fonts/font = SubResource( 1 )
 text = "RESET"
 
 [node name="skip" type="Button" parent="Node2D"]
-visible = false
 margin_left = 1588.0
 margin_top = 139.0
 margin_right = 1816.0

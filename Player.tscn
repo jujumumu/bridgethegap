@@ -196,7 +196,7 @@ extents = Vector2( 26, 35 )
 
 [node name="Player" type="KinematicBody2D"]
 z_index = 10
-collision_layer = 150
+collision_layer = 406
 collision_mask = 13
 script = ExtResource( 1 )
 
@@ -221,7 +221,7 @@ shape = SubResource( 40 )
 
 [node name="pull" type="Area2D" parent="."]
 collision_layer = 0
-collision_mask = 3
+collision_mask = 257
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pull"]
 position = Vector2( 0, 3 )
