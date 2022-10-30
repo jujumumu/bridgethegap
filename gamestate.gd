@@ -38,13 +38,13 @@ func _player_disconnected(id):
 		unregister_player(id)
 
 
-# Callback from SceneTree, only for clients (not server).
+
 func _connected_ok():	
 	# We just connected to a server
 	emit_signal("connection_succeeded")
 
 
-# Callback from SceneTree, only for clients (not server).
+
 func _server_disconnected():
 	emit_signal("game_error", "Server disconnected")
 	end_game()
@@ -53,13 +53,12 @@ func disconnect_game():
 	get_tree().network_peer = null
 	end_game()
 
-# Callback from SceneTree, only for clients (not server).
+
 func _connected_fail():
-	get_tree().set_network_peer(null) # Remove peer
+	get_tree().set_network_peer(null) 
 	emit_signal("connection_failed")
 
 
-# Lobby management functions.
 
 remote func register_player(new_player_name):
 	var id = get_tree().get_rpc_sender_id()
@@ -87,8 +86,8 @@ remote func pre_start_game(spawn_points, order):
 		var player = player_scene.instance()
 		
 		var p_id = thing.id
-		player.set_name(str(p_id)) # Use unique ID as node name.
-		player.set_network_master(p_id) #set unique id as master.
+		player.set_name(str(p_id)) 
+		player.set_network_master(p_id)
 		player.set_color(thing.color)
 		playercolors[p_id] = thing.color
 
@@ -110,7 +109,7 @@ remote func pre_start_game(spawn_points, order):
 
 
 remote func post_start_game():
-	get_tree().set_pause(false) # Unpause and unleash the game!
+	get_tree().set_pause(false) 
 
 
 remote func ready_to_start(id):
@@ -174,7 +173,7 @@ func begin_game():
 
 func end_game():
 	current_level = 0
-	if has_node("/root/World"): # Game is in progress.
+	if has_node("/root/World"):
 		# End it
 		get_node("/root/World").queue_free()
 
